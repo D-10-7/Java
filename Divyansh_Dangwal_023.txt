@@ -1,0 +1,113 @@
+Q1:
+
+package fhdkjfdskfj;
+
+abstract class Account
+{
+	public abstract void calcInt();
+}
+
+class Saving extends Account
+{
+
+	public void calcInt()
+	{
+		System.out.println("inside savings");
+	}
+	
+}
+
+
+class Current extends Account
+{
+
+	public void calcInt()
+	{
+		System.out.println("inside current");
+	}
+	
+}
+
+class RD extends Account
+{
+	public void calcInt()
+	{
+		System.out.println("inside RD");
+	}
+}
+
+public class AcDemo 
+{
+	static void perform(Account ref)
+	{
+		ref.calcInt();
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Saving sv= new Saving();
+
+		if(sv instanceof Saving)
+		{
+		perform(sv);
+		}
+
+}
+
+}
+
+
+
+
+
+Q2:
+
+package fhdkjfdskfj;
+
+public class q2
+{
+	
+public static void main(String [] args)
+{
+
+	for(int i=1; i<5; i++)
+	{
+		int a=1;
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print(a);
+			a++;
+		}
+		System.out.println();
+	}
+	
+}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
